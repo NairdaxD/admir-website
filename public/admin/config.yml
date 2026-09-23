@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "insights"
+    label: "Insights / Articles"
+    folder: "src/pages/insights-content"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Category (Tag)", name: "tag", widget: "string", default: "Legal"}
+      - {label: "Body", name: "body", widget: "markdown"}
