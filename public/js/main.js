@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // === 1. NAVBAR SCROLL ===
-    const navbar = document.getElementById('navbar');
+    const navbar = document.querySelector('.navbar');
     const handleScroll = () => {
         if (!navbar) return;
         navbar.classList.toggle('scrolled', window.scrollY > CONFIG.scrollThreshold);
