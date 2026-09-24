@@ -1414,7 +1414,7 @@ p {
 
 /* Page Hero (inner pages — shorter than homepage hero) */
 .page-hero {
-  padding: 10rem 0 5rem;
+  padding: 10rem 0 2rem;
   position: relative;
   overflow: hidden;
   background-color: var(--bg-primary);
